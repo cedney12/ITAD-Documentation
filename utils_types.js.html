@@ -1,0 +1,478 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> utils/types.js</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">ITAD Web App Documentation</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Global</h3><ul><li><a href="global.html#useDataGridControls">useDataGridControls</a></li></ul></div><div class="category"><h2>Components</h2><h3>Modules / Auth</h3><ul><li><a href="module-Avatar.html">Avatar</a></li><li><a href="module-PermissionWrapper.html">PermissionWrapper</a></li><li><a href="module-ProtectedRoute.html">ProtectedRoute</a></li></ul><h3>Modules / Text</h3><ul><li><a href="module-BoxDetails.html">BoxDetails</a></li><li><a href="module-ItemDetails.html">ItemDetails</a></li><li><a href="module-PageTitle.html">PageTitle</a></li><li><a href="module-PalletDetails.html">PalletDetails</a></li><li><a href="module-PartnerDetails.html">PartnerDetails</a></li><li><a href="module-PlaceholderBox.html">PlaceholderBox</a></li><li><a href="module-TrayDetails.html">TrayDetails</a></li><li><a href="module-TrayItemDetail.html">TrayItemDetail</a></li><li><a href="module-TrayItemDetails.html">TrayItemDetails</a></li></ul><h3>Modules / Reports</h3><ul><li><a href="module-BoxLabel.html">BoxLabel</a></li><li><a href="module-Invoice.html">Invoice</a></li><li><a href="module-PackingList.html">PackingList</a></li><li><a href="module-PalletLabel.html">PalletLabel</a></li><li><a href="module-PickTicket.html">PickTicket</a></li><li><a href="module-PlaceholderPDF.html">PlaceholderPDF</a></li><li><a href="module-ReportLabel.html">ReportLabel</a></li></ul><h3>Modules / Buttons</h3><ul><li><a href="module-Buttons.html">Buttons</a></li><li><a href="module-DropdownArrow.html">DropdownArrow</a></li><li><a href="module-IconButtons.html">IconButtons</a></li><li><a href="module-PaginationButton.html">PaginationButton</a></li><li><a href="module-SegmentedControl.html">SegmentedControl</a></li></ul><h3>Modules / Form</h3><ul><li><a href="module-CPURow.html">CPURow</a></li><li><a href="module-Card.html">Card</a></li><li><a href="module-ContactCard.html">ContactCard</a></li><li><a href="module-DisabledOverlay.html">DisabledOverlay</a></li><li><a href="module-IntercoCheckbox.html">IntercoCheckbox</a></li><li><a href="module-PartnerCard.html">PartnerCard</a></li><li><a href="module-PartnerModal.html">PartnerModal</a></li><li><a href="module-PhoneField.html">PhoneField</a></li><li><a href="module-PriceField.html">PriceField</a></li><li><a href="module-RAMRow.html">RAMRow</a></li><li><a href="module-ShieldComponent.html">ShieldComponent</a></li><li><a href="module-StateField.html">StateField</a></li></ul><h3>Modules / Table</h3><ul><li><a href="module-CustomDataGrid.html">CustomDataGrid</a></li><li><a href="module-NullCell.html">NullCell</a></li></ul><h3>Modules / Data Grid</h3><ul><li><a href="module-DataGrid.html">DataGrid</a></li><li><a href="module-Footer.html">Footer</a></li><li><a href="module-OptionalCell.html">OptionalCell</a></li><li><a href="module-SearchBar.html">SearchBar</a></li></ul><h3>Modules / Template</h3><ul><li><a href="module-Header.html">Header</a></li><li><a href="module-Loading.html">Loading</a></li><li><a href="module-ModalWrapper.html">ModalWrapper</a></li></ul><h3>Modules / Orders</h3><ul><li><a href="module-OrderInfo.html">OrderInfo</a></li><li><a href="module-OrderInfoTitle.html">OrderInfoTitle</a></li></ul></div><div class="category"><h2>Contexts</h2><h3>Modules</h3><ul><li><a href="module-AuthContext.html">AuthContext</a></li><li><a href="module-LoadingContext.html">LoadingContext</a></li><li><a href="module-SnackbarContext.html">SnackbarContext</a></li></ul></div><div class="category"><h2>Hooks</h2><h3>Modules</h3><ul><li><a href="module-useBatchCalls.html">useBatchCalls</a></li><li><a href="module-useColumns.html">useColumns</a></li><li><a href="module-useFetchData.html">useFetchData</a></li><li><a href="module-useHandleCellClick.html">useHandleCellClick</a></li><li><a href="module-useHandleRequest.html">useHandleRequest</a></li><li><a href="module-useItems.html">useItems</a></li><li><a href="module-useLocalStorage.html">useLocalStorage</a></li><li><a href="module-useLocations.html">useLocations</a></li><li><a href="module-useModalManager.html">useModalManager</a></li><li><a href="module-usePermissions.html">usePermissions</a></li><li><a href="module-useSelectRow.html">useSelectRow</a></li></ul></div><div class="category"><h2>Utility</h2><h3>Modules</h3><ul><li><a href="module-capitalize.html">capitalize</a></li><li><a href="module-depluralize.html">depluralize</a></li><li><a href="module-doNothing.html">doNothing</a></li><li><a href="module-formatDate.html">formatDate</a></li><li><a href="module-formatNumber.html">formatNumber</a></li><li><a href="module-formatPrice.html">formatPrice</a></li><li><a href="module-getAPIObjectType.html">getAPIObjectType</a></li><li><a href="module-getBarcode.html">getBarcode</a></li><li><a href="module-getHeightInPixels.html">getHeightInPixels</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>utils/types.js</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * onClick action for a button
+ * 
+ * @callback OnClick
+ */
+
+/**
+ * The two types of Buttons present in this software
+ * @typedef {"button" | "submit"} ButtonType
+ */
+
+/**
+ * MUI types for Buttons
+ * @typedef {"contained" | "outlined" | "text"} ButtonVariant
+ */
+
+/**
+ * @typedef {"DIMM" | "SODIMM"} TrayFormFactor
+ */
+
+/**
+ * @typedef {"Parity" | "ECC" | "i3" | "i5" | "i7"} TrayType
+ */
+
+/**
+ * @typedef {"DDR3" | "DDR4"} TrayVersion
+ */
+
+/**
+ * @typedef {"Supplier" | "Customer"} PartnerType
+ */
+
+/**
+ * @typedef {"asc" | "desc"} SortDirection
+ */
+
+/**
+ * Data for name, link, and icon for a sidebar item
+ * @typedef SidebarLink
+ * @property {string} name The string to be displayed in the sidebar
+ * @property {string} link The link to be followed when the link is clicked 
+ * @property {JSX.Element} [icon] Optional React Icon
+ */
+
+/**
+ * Data for a whole sidebar section, including an overarching title, all associated links, and whether the 
+ * section has a dropdown or not.
+ * @typedef SidebarSections
+ * @property {string} title Main title for the dropdown/button
+ * @property {SidebarLink[]} links All dropdown links
+ * @property {boolean} [noDropdown] true if section shouldn't have a dropdown,
+ * falsy otherwise
+ * @property {JSX.Element} [icon]
+ */
+
+/**
+ * React Route type
+ * @typedef Route
+ * @property {string} link Associated link
+ * @property {React.JSX.Element} element React Element to be displayed on that link
+ */
+
+/**
+ * A Partner can either be a Customer or Supplier (denoted by `is_supplier`), but generally have the same data.
+ * 
+ * @typedef Partner
+ * @property {number} id
+ * @property {string} name
+ * @property {string} street
+ * @property {string} city
+ * @property {string} state
+ * @property {string} zip
+ * @property {boolean} is_supplier
+ */
+
+/**
+ * Warehouse locations. Other types will have references to `location.id`, but a name is also added for user readability
+ * @typedef Location
+ * @property {number} id
+ * @property {string} location_name
+ */
+
+/**
+ * An Item (or asset, in some cases) is a key object in this software. Here is the life cycle of an item:
+ * - Item is received off a shipment (using the scanner, but the Web App also has that functionality)
+ *   - This action creates an item in the DB, with the current date as `date_received` and all necessary data inputted
+ *   - If this is the first item received for a purchase order, sets the purchase order's `date_received` field to the current 
+ * - Item is placed either on a [Box]{@link Box} or [Pallet]{@link Pallet}
+ *   - All non-desktops are placed into a Box which increases that Box's `item_count`
+ *   - Desktops can be placed on a Pallet directly, updating that Pallet's `box_count`
+ * - From there, the Item can be moved to other Boxes/Pallets, but will eventually be shipped as part of a Box/Pallet
+ * 
+ * @typedef Item
+ * @property {number} id 
+ * @property {number} asset_num
+ * @property {number} po_num
+ * @property {number} [box_id]
+ * @property {number} [pallet_id]
+ * @property {string} description
+ * @property {string} condition
+ * @property {string} date_received
+ * @property {string} [date_shipped]
+ */
+
+/**
+ * A Tray is one of the three containers in this software. Here are its details:
+ * - A Tray holds [Tray Items]{@link TrayItem} that are either RAM sticks or CPUs
+ * - A Tray will always hold only one type of Tray Item, which is displayed in the `has_ram` flag
+ * - A Tray will normally have a set number of Tray Items, those being 25 or 50 RAM sticks or 21 CPUs
+ *   - A Tray, though, can be left unfilled and a user can add a CPU to the next unfilled Tray
+ * - A Tray is created at the same time as Tray Items in the Inventory screen
+ * 
+ * @typedef Tray
+ * @property {number} id
+ * @property {number} item_count
+ * @property {number} location_id
+ * @property {boolean} has_ram
+ * @property {string} date_created
+ * @property {string} [date_shipped]
+ */
+
+/**
+ * A Tray Item represents a number of like CPUs or RAM sticks. The non-optional fields are 
+ * available for both a CPU and RAM stick, but optionals are only valid for one or the other.
+ * A Tray Item that describes RAM sticks has: 
+ * - `brand`
+ * - `model`
+ * - `form_factor`
+ * - `shielded`
+ * - `type`
+ * - `version`
+ * - `speed` (in MHz)
+ * - `size`
+ * - `quantity` (25 or 50)
+ * 
+ * While a Tray Item that describes CPUs has:
+ * - `type`
+ * - `model` (4-5 digit number)
+ * - `speed` (in GHz)
+ * - `has_imperfections` (surface imperfections)
+ * - `has_chipped_edges`
+ * - `grade` (A)
+ * - `quantity` (generally 1, but could be multiple)
+ * 
+ * Tray Items are created at the same time as [Trays]{@link Tray} on the Inventory Screen
+ * 
+ * @typedef TrayItem
+ * @property {number} id
+ * @property {number} tray_id
+ * @property {number} po_num
+ * @property {number} speed
+ * @property {number} [size]
+ * @property {number} quantity
+ * @property {boolean} [is_shielded]
+ * @property {boolean} [has_imperfections]
+ * @property {boolean} [has_chipped_edges]
+ * @property {boolean} is_ram
+ * @property {string} asset_num
+ * @property {string} [brand]
+ * @property {string} model
+ * @property {TrayType} type
+ * @property {string} [grade]
+ * @property {string} [date_shipped]
+ * @property {string} date_created
+ * @property {TrayFormFactor} [form_factor]
+ * @property {TrayVersion} [version]
+ */
+
+/**
+ * A Box is one of three containers that are available in this software. Here is its life cycle:
+ * - A Box can be created at any time using the Inventory screen. Doing so generates a new Box ID and
+ *      an associated Box Tag to print out. This Box Tag can also be printed via the Reports screen
+ * - After receiving [Items]{@link Item}, any number of Items can be placed in the Box
+ *   - Moving an Item onto a Box updates the Box's `item_count` and the Item's `box_id`
+ * - The Box can be moved from location to location, as well as placed on a [Pallet]{@link Pallet}
+ *   - If a Box is moved to a location while it is on a Pallet, the user will be prompted with a confirmation,
+ *      then the Box will be taken off the pallet (`pallet_id` set to `null`) and to that location
+ *   - If a Box is moved onto a Pallet, the Box's `location_id` is updated to match the Pallet's. Additionally, the
+ *      Box's `pallet_id` and the `pallet_id` of all Items in the Box are updated to match the Pallet's.
+ * - A Box can be shipped either by itself or on a Pallet
+ * 
+ * @typedef Box
+ * @property {number} id
+ * @property {number} [pallet_id]
+ * @property {number} [location_id]
+ * @property {number} item_count
+ * @property {string} description
+ * @property {string} date_created
+ * @property {string} date_shipped
+ */
+
+/**
+ * A Pallet is one of three containers that are available in this software. Here is its life cycle:
+ * - A Pallet can be created at any time using the Inventory screen. Doing so generates a new Pallet ID and
+ *      an associated Pallet Tag to print out. This Pallet Tag can also be printed via the Reports screen
+ * - The only things that can go on a Pallet are [Boxes]{@link Box} and "Desktop" [Items]{@link Item}.
+ * - Moving an Item or Box onto a Pallet updates that Pallet's `box_count`, as well as updates the Box/Item's `pallet_id`. 
+ * - The Pallet can be moved from location to location
+ *   - When a Pallet is moved, the Boxes on the Pallet are also updated to show the change.
+ * - Either of the above objects can be placed onto a Pallet. Any time the pallet is moved or shipped, the
+ *      Box or Item also reflects those changes
+ * - A Pallet will eventually be shipped
+ * @typedef Pallet
+ * @property {number} id
+ * @property {number} [location_id]
+ * @property {number} box_count
+ * @property {string} description
+ * @property {string} date_created
+ * @property {string} date_shipped
+ */
+
+/**
+ * Type used internally to structure inputs for Report Generation by the user
+ * @typedef ReportInput
+ * @property {string} label
+ * @property {number} value
+ */
+
+/**
+ * A Purchase Order is one of two types of Orders that are present in the software. Here are its details:
+ * - A Purchase Order can be created by going to the Purchase Order screen and clicking the + button
+ * - A Purchase Order can be edited by going to the Purchase Order screen and clicking the pencil button
+ * - A Purchase Order can be either Interco or Non-Interco. If it's an Interco Order, contact information
+ *      (for the supplier) is not needed. Furthermore, no [Purchase Order Items]{@link PurchaseOrderItem} are created
+ * - If it's a Non-Interco order, contact information is needed, as well as Purchase Order Items, which are what is expected to come on the shipment.
+ * - Once an [Item]{@link Item} is received with a valid Purchase Order number, that Purchase Order whose ID matches that number is marked as
+ *      received (`date_received` set to that datetime) and the Purchase Order can no longer be edited
+ * - A Purchase Order's Items present in the inventory may not always add up to total the expected Purchase Order Items inputted at creation.
+ *      Because of this, the user can go to the Order Review tab and see the discrepencies for a Purchase Order
+ * @typedef PurchaseOrder
+ * @property {number} id
+ * @property {boolean} is_itc
+ * @property {string} date_created
+ * @property {string} [date_received]
+ * @property {string} supp_name
+ * @property {string} supp_street
+ * @property {string} supp_city
+ * @property {string} supp_state
+ * @property {string} supp_zip
+ * @property {string} supp_num
+ * @property {string} cust_name
+ * @property {string} cust_street
+ * @property {string} cust_city
+ * @property {string} cust_state
+ * @property {string} cust_zip
+ * @property {string} [contact_first]
+ * @property {string} [contact_last]
+ * @property {string} [contact_num]
+ * @property {string} [contact_email]
+ */
+
+/**
+ * A descriptor of an item to be expected on a [Purchase Order]{@link PurchaseOrder}. 
+ * This includes the type of item (`description`), the number of items expected to be received (`quantity`),
+ * and the trader-agreed-upon price per unit of that item (`price_per_unit`)
+ * 
+ * @typedef PurchaseOrderItem
+ * @property {number} id
+ * @property {number} po_id 
+ * @property {string} description
+ * @property {number} quantity
+ * @property {number} price_per_unit
+ */
+
+/**
+ * Logged-in user data, used for role-based permission.
+ * 
+ * @typedef User
+ * @property {number} id
+ * @property {string} email
+ * @property {string} first_name
+ * @property {string} last_name
+ * @property {string} role
+ */
+
+/**
+ * An Invoice is one of two types of Orders in this software. Here are its details:
+ * - An Invoice can be created by going to the Invoice screen and clicking the + button
+ * - An Invoice can be edited by going to the Invoice screen and clicking the pencil button
+ * - An Invoice is created with [Pick Ticket Items]{@link PickTicketItem}, which are [Boxes]{@link Box} and [Pallets]{@link Pallet}
+ *      that will be included on the outgoing shipment
+ * - Once an Invoice is created, the individual [Items]{@link Item} in the order can be viewed (even though the Pick Ticket Items are containers)
+ *   - This can also be viewed as a report via the Invoice or Reports screen
+ * - The Invoice will also be generated as a Pick Ticket, which can be viewed on the Order Picking screen
+ *   - This screen details the Boxes and Pallets needed to be picked and their locations, which can also be viewed as a report
+ * @typedef Invoice
+ * @property {number} id
+ * @property {boolean} picked
+ * @property {string} date_created
+ * @property {string} [date_shipped]
+ * @property {string} supp_name
+ * @property {string} supp_street
+ * @property {string} supp_city
+ * @property {string} supp_state
+ * @property {string} supp_zip
+ * @property {string} cust_name
+ * @property {string} cust_street
+ * @property {string} cust_city
+ * @property {string} cust_state
+ * @property {string} cust_zip
+ * @property {string} contact_first
+ * @property {string} contact_last
+ * @property {string} contact_num
+ * @property {string} contact_email
+ */
+
+/**
+ * Pick Ticket Items are used to describe the [Boxes]{@link Box} and [Pallets]{@link Pallet}
+ * that are in an Invoice. They have a flag that tells the user of the object whether the data
+ * is a Box or a Pallet, as well as where the container is (`location_id`) and the description of the pallet
+ * 
+ * @typedef PickTicketItem
+ * @property {number} id
+ * @property {number} invoice_id
+ * @property {number} container_num
+ * @property {number} location_id
+ * @property {boolean} is_pallet
+ * @property {string} description
+ */
+
+/**
+ * For use with AG Data Grid. Dictates the current page number and the size of the page
+ * for the grid, to control pagination
+ * 
+ * @typedef {object} PaginationModel
+ * @property {number} page
+ * @property {number} pageSize
+ */
+
+/**
+ * For use with AG Data Grid. Dictates the field to sort by as well as the direction
+ * 
+ * @typedef {object} SortModel
+ * @property {string} sortField
+ * @property {SortDirection} sortDirection
+ */
+
+/**
+ * The object returned from useDataGridControls, which contains all Data Grid Controls states
+ * 
+ * @typedef DataGridControls
+ * @property {PaginationModel} paginationModel
+ * @property {React.SetStateAction&lt;React.Dispatch&lt;PaginationModel>>} setPaginationModel
+ * @property {SortModel} sortModel
+ * @property {React.SetStateAction&lt;React.Dispatch&lt;SortModel>>} setSortModel
+ * @property {string} searchValue
+ * @property {React.SetStateAction&lt;React.Dispatch&lt;string>>} setSearchValue
+ */
+
+/**
+ * Default values for DataGrid Controls
+ * @typedef DataGridControlsDefaults
+ * @property {number} page
+ * @property {number} pageSize
+ * @property {string} sortField
+ * @property {SortDirection} sortDirection
+ * @property {string} search
+ */</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.4</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+
+</body>
+</html>
