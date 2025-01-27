@@ -1,0 +1,422 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> hooks/useColumns.js</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">ITAD Web App Documentation</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>Components</h2><h3>Modules / Auth</h3><ul><li><a href="module-Avatar.html">Avatar</a></li><li><a href="module-PermissionWrapper.html">PermissionWrapper</a></li><li><a href="module-ProtectedRoute.html">ProtectedRoute</a></li></ul><h3>Modules / Text</h3><ul><li><a href="module-BoxDetails.html">BoxDetails</a></li><li><a href="module-ItemDetails.html">ItemDetails</a></li><li><a href="module-PageTitle.html">PageTitle</a></li><li><a href="module-PalletDetails.html">PalletDetails</a></li><li><a href="module-PartnerDetails.html">PartnerDetails</a></li><li><a href="module-PlaceholderBox.html">PlaceholderBox</a></li></ul><h3>Modules / Reports</h3><ul><li><a href="module-BoxLabel.html">BoxLabel</a></li><li><a href="module-Invoice.html">Invoice</a></li><li><a href="module-PackingList.html">PackingList</a></li><li><a href="module-PalletLabel.html">PalletLabel</a></li><li><a href="module-PickTicket.html">PickTicket</a></li><li><a href="module-PlaceholderPDF.html">PlaceholderPDF</a></li><li><a href="module-ReportLabel.html">ReportLabel</a></li></ul><h3>Modules / Buttons</h3><ul><li><a href="module-Buttons.html">Buttons</a></li><li><a href="module-DropdownArrow.html">DropdownArrow</a></li><li><a href="module-IconButtons.html">IconButtons</a></li><li><a href="module-SegmentedControl.html">SegmentedControl</a></li></ul><h3>Modules / Form</h3><ul><li><a href="module-Card.html">Card</a></li><li><a href="module-ContactCard.html">ContactCard</a></li><li><a href="module-PartnerCard.html">PartnerCard</a></li><li><a href="module-PartnerModal.html">PartnerModal</a></li><li><a href="module-PhoneField.html">PhoneField</a></li><li><a href="module-StateField.html">StateField</a></li></ul><h3>Modules / Table</h3><ul><li><a href="module-CustomDataGrid.html">CustomDataGrid</a></li><li><a href="module-NullCell.html">NullCell</a></li></ul><h3>Modules / Data Grid</h3><ul><li><a href="module-Footer.html">Footer</a></li><li><a href="module-OptionalCell.html">OptionalCell</a></li></ul><h3>Modules / Template</h3><ul><li><a href="module-Header.html">Header</a></li><li><a href="module-Loading.html">Loading</a></li><li><a href="module-ModalWrapper.html">ModalWrapper</a></li></ul><h3>Modules / Orders</h3><ul><li><a href="module-OrderInfo.html">OrderInfo</a></li><li><a href="module-OrderInfoTitle.html">OrderInfoTitle</a></li></ul></div><div class="category"><h2>Contexts</h2><h3>Modules</h3><ul><li><a href="module-AuthContext.html">AuthContext</a></li><li><a href="module-LoadingContext.html">LoadingContext</a></li><li><a href="module-SnackbarContext.html">SnackbarContext</a></li></ul></div><div class="category"><h2>Hooks</h2><h3>Modules</h3><ul><li><a href="module-useBatchCalls.html">useBatchCalls</a></li><li><a href="module-useColumns.html">useColumns</a></li><li><a href="module-useFetchData.html">useFetchData</a></li><li><a href="module-useHandleRequest.html">useHandleRequest</a></li><li><a href="module-useItems.html">useItems</a></li><li><a href="module-useLocalStorage.html">useLocalStorage</a></li><li><a href="module-useLocations.html">useLocations</a></li><li><a href="module-useModalManager.html">useModalManager</a></li><li><a href="module-usePermissions.html">usePermissions</a></li><li><a href="module-useSelectRow.html">useSelectRow</a></li></ul></div><div class="category"><h2>Utility</h2><h3>Modules</h3><ul><li><a href="module-capitalize.html">capitalize</a></li><li><a href="module-depluralize.html">depluralize</a></li><li><a href="module-doNothing.html">doNothing</a></li><li><a href="module-formatDate.html">formatDate</a></li><li><a href="module-formatNumber.html">formatNumber</a></li><li><a href="module-formatPrice.html">formatPrice</a></li><li><a href="module-getAPIObjectType.html">getAPIObjectType</a></li><li><a href="module-getBarcode.html">getBarcode</a></li><li><a href="module-getHeightInPixels.html">getHeightInPixels</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>hooks/useColumns.js</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>// eslint-disable-next-line no-unused-vars
+import { ColDef } from "ag-grid-community"
+
+import OptionalCell from "components/data-grid/OptionalCell"
+import NullCell from "components/table/NullCell"
+import { formatDate, formatNumber } from "utils/formatter"
+
+import useLocations from "./useLocations"
+
+/**
+ * Custom hook that contains all columns for the project. This is for use with
+ * CustomDataGrid (an extension of MUI's DataGrid), and custom tables for OrderInfo
+ * @returns {Column[]}
+ * @category Hooks
+ * @module useColumns
+ */
+const useColumns = () => {
+    const { locations } = useLocations()
+
+    /** @type {Object.&lt;string, ColDef>} */
+    const columns = {
+        first_name: {
+            field: "first_name",
+            width: 200,
+            headerName: "First Name",
+        },
+        last_name: {
+            field: "last_name",
+            width: 200,
+            headerName: "Last Name",
+        },
+        email: {
+            field: "email",
+            width: 200,
+            headerName: "Email",
+        },
+        role: {
+            field: "role",
+            width: 200,
+            headerName: "Role",
+        },
+        asset_num: (onClick) => ({
+            field: "asset_num",
+            width: 100,
+            headerName: "Asset #",
+            cellRenderer: OptionalCell,
+            cellRendererParams: (params) => ({
+                params,
+                onClick,
+                clickable: true
+            })
+        }),
+        asset_num_no_select: {
+            field: "asset_num",
+            width: 100,
+            headerName: "Asset #",
+        },
+        description: {
+            field: "description",
+            width: 200,
+            headerName: "Description"
+        },
+        condition: {
+            field: "condition",
+            width: 100,
+            headerName: "Condition",
+            renderCell: (params) => params.value ?? &lt;NullCell />
+        },
+        supplier: {
+            field: "supplier",
+            width: 200,
+            headerName: "Supplier",
+        },
+        date_received: {
+            field: "date_received",
+            width: 100,
+            headerName: "Received",
+            valueFormatter: (params) => formatDate(params.value)
+        },
+        date_shipped: {
+            field: "date_shipped",
+            width: 100,
+            headerName: "Shipped",
+            valueFormatter: (params) => formatDate(params.value),
+        },
+        date_created: {
+            field: "date_created",
+            width: 100,
+            headerName: "Created",
+            valueFormatter: (params) => formatDate(params.value),
+        },
+        box_id: (onClick) => ({
+            field: "box_id",
+            width: 125,
+            headerName: "Box #",
+            cellRenderer: OptionalCell,
+            cellRendererParams: (params) => ({
+                params,
+                onClick,
+                clickable: true
+            })
+        }),
+        box_num_as_id: (onClick) => ({
+            field: "id",
+            width: 125,
+            headerName: "Box #",
+            cellRenderer: OptionalCell,
+            cellRendererParams: (params) => ({
+                params,
+                onClick,
+                clickable: true
+            })
+        }),
+        location_id: {
+            field: "location_id",
+            width: 125,
+            headerName: "Location",
+            valueFormatter: (params) => locations.find((l) => l.id === Number(params.value))?.location_name ?? "N/A"
+        },
+        item_count: {
+            field: "item_count",
+            width: 125,
+            headerName: "Item Count"
+        },
+        pallet_id: (onClick) => ({
+            field: "pallet_id",
+            width: 125,
+            headerName: "Pallet #",
+            cellRenderer: OptionalCell,
+            cellRendererParams: (params) => ({
+                params,
+                onClick,
+                clickable: true
+            })
+        }),
+        pallet_num_as_id: (onClick) => ({
+            field: "id",
+            width: 125,
+            headerName: "Pallet #",
+            cellRenderer: OptionalCell,
+            cellRendererParams: (params) => ({
+                params,
+                onClick,
+                clickable: true
+            })
+        }),
+        weight: {
+            field: "weight",
+            width: 125,
+            headerName: "Weight",
+            valueFormatter: (params) => formatNumber(params.value),
+        },
+        box_count: {
+            field: "box_count",
+            width: 125,
+            headerName: "Box Count",
+        },
+        po_num: {
+            field: "po_num",
+            width: 80,
+            headerName: "PO #",
+            cellClass: "clickable",
+        },
+        po_num_as_id: {
+            field: "id",
+            width: 80,
+            headerName: "PO #",
+            cellRenderer: OptionalCell,
+            cellRendererParams: (params) => ({
+                params,
+                clickable: true
+            })
+        },
+        supp_name: {
+            field: "supp_name",
+            width: 200,
+            headerName: "Supplier",
+        },
+        cust_name: {
+            field: "cust_name",
+            width: 200,
+            headerName: "Customer",
+        },
+        name: {
+            field: "name",
+            width: 200,
+            headerName: "Name",
+        },
+        street: {
+            field: "street",
+            width: 180,
+            headerName: "Street Address",
+        },
+        city: {
+            field: "city",
+            width: 140,
+            headerName: "City",
+        },
+        state: {
+            field: "state",
+            width: 60,
+            headerName: "State",
+        },
+        zip: {
+            field: "zip",
+            width: 70,
+            headerName: "ZIP",
+        },
+        id: {
+            field: "id",
+            width: 110,
+            headerName: "Invoice #",
+            cellRenderer: OptionalCell,
+            cellRendererParams: (params) => ({
+                params,
+                clickable: true
+            })
+        },
+        id_no_select: {
+            field: "id",
+            width: 100,
+            headerName: "ID",
+        },
+        invoice_id: {
+            field: "invoice_id",
+            width: 100,
+            headerName: "Invoice ID",
+        },
+        container_num: {
+            field: "container_num",
+            width: 150,
+            headerName: "Number",
+        },
+        is_pallet: {
+            field: "is_pallet",
+            width: 100,
+            headerName: "Type",
+            valueFormatter: (params) => &lt;p>{params.value ? "Pallet" : "Box"}&lt;/p>,
+        },
+        needed: {
+            field: "needed",
+            width: 100,
+            headerName: "Needed",
+        },
+        remaining: {
+            field: "remaining",
+            width: 100,
+            headerName: "Remaining",
+        },
+        brand: {
+            field: "brand",
+            width: 100,
+            headerName: "Brand",
+            cellRenderer: OptionalCell,
+            cellRendererParams: (params) => ({
+                params
+            })
+        },
+        model: {
+            field: "model",
+            width: 100,
+            headerName: "Model"
+        },
+        type: {
+            field: "type",
+            width: 100,
+            headerName: "Type"
+        },
+        speed: {
+            field: "speed",
+            width: 100,
+            headerName: "Speed"
+        },
+        quantity: {
+            field: "quantity",
+            width: 100,
+            headerName: "Quantity"
+        },
+        tray_num_as_id: (onClick) => ({
+            field: "id",
+            width: 100,
+            headerName: "Tray #",
+            cellClass: "clickable",
+            cellRenderer: OptionalCell,
+            cellRendererParams: (params) => ({
+                params,
+                onClick,
+                clickable: true
+            })
+        }),
+        tray_type: {
+            width: 100,
+            headerName: "Tray Type",
+            valueFormatter: (params) => params.data.has_ram ? "RAM" : "CPU"
+        }
+    }
+
+    return { columns }
+}
+
+export default useColumns
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.4</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+
+</body>
+</html>

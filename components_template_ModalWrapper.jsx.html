@@ -1,0 +1,177 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> components/template/ModalWrapper.jsx</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">ITAD Web App Documentation</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>Components</h2><h3>Modules / Auth</h3><ul><li><a href="module-Avatar.html">Avatar</a></li><li><a href="module-PermissionWrapper.html">PermissionWrapper</a></li><li><a href="module-ProtectedRoute.html">ProtectedRoute</a></li></ul><h3>Modules / Text</h3><ul><li><a href="module-BoxDetails.html">BoxDetails</a></li><li><a href="module-ItemDetails.html">ItemDetails</a></li><li><a href="module-PageTitle.html">PageTitle</a></li><li><a href="module-PalletDetails.html">PalletDetails</a></li><li><a href="module-PartnerDetails.html">PartnerDetails</a></li><li><a href="module-PlaceholderBox.html">PlaceholderBox</a></li></ul><h3>Modules / Reports</h3><ul><li><a href="module-BoxLabel.html">BoxLabel</a></li><li><a href="module-Invoice.html">Invoice</a></li><li><a href="module-PackingList.html">PackingList</a></li><li><a href="module-PalletLabel.html">PalletLabel</a></li><li><a href="module-PickTicket.html">PickTicket</a></li><li><a href="module-PlaceholderPDF.html">PlaceholderPDF</a></li><li><a href="module-ReportLabel.html">ReportLabel</a></li></ul><h3>Modules / Buttons</h3><ul><li><a href="module-Buttons.html">Buttons</a></li><li><a href="module-DropdownArrow.html">DropdownArrow</a></li><li><a href="module-IconButtons.html">IconButtons</a></li><li><a href="module-SegmentedControl.html">SegmentedControl</a></li></ul><h3>Modules / Form</h3><ul><li><a href="module-Card.html">Card</a></li><li><a href="module-ContactCard.html">ContactCard</a></li><li><a href="module-PartnerCard.html">PartnerCard</a></li><li><a href="module-PartnerModal.html">PartnerModal</a></li><li><a href="module-PhoneField.html">PhoneField</a></li><li><a href="module-StateField.html">StateField</a></li></ul><h3>Modules / Table</h3><ul><li><a href="module-CustomDataGrid.html">CustomDataGrid</a></li><li><a href="module-NullCell.html">NullCell</a></li></ul><h3>Modules / Data Grid</h3><ul><li><a href="module-Footer.html">Footer</a></li><li><a href="module-OptionalCell.html">OptionalCell</a></li></ul><h3>Modules / Template</h3><ul><li><a href="module-Header.html">Header</a></li><li><a href="module-Loading.html">Loading</a></li><li><a href="module-ModalWrapper.html">ModalWrapper</a></li></ul><h3>Modules / Orders</h3><ul><li><a href="module-OrderInfo.html">OrderInfo</a></li><li><a href="module-OrderInfoTitle.html">OrderInfoTitle</a></li></ul></div><div class="category"><h2>Contexts</h2><h3>Modules</h3><ul><li><a href="module-AuthContext.html">AuthContext</a></li><li><a href="module-LoadingContext.html">LoadingContext</a></li><li><a href="module-SnackbarContext.html">SnackbarContext</a></li></ul></div><div class="category"><h2>Hooks</h2><h3>Modules</h3><ul><li><a href="module-useBatchCalls.html">useBatchCalls</a></li><li><a href="module-useColumns.html">useColumns</a></li><li><a href="module-useFetchData.html">useFetchData</a></li><li><a href="module-useHandleRequest.html">useHandleRequest</a></li><li><a href="module-useItems.html">useItems</a></li><li><a href="module-useLocalStorage.html">useLocalStorage</a></li><li><a href="module-useLocations.html">useLocations</a></li><li><a href="module-useModalManager.html">useModalManager</a></li><li><a href="module-usePermissions.html">usePermissions</a></li><li><a href="module-useSelectRow.html">useSelectRow</a></li></ul></div><div class="category"><h2>Utility</h2><h3>Modules</h3><ul><li><a href="module-capitalize.html">capitalize</a></li><li><a href="module-depluralize.html">depluralize</a></li><li><a href="module-doNothing.html">doNothing</a></li><li><a href="module-formatDate.html">formatDate</a></li><li><a href="module-formatNumber.html">formatNumber</a></li><li><a href="module-formatPrice.html">formatPrice</a></li><li><a href="module-getAPIObjectType.html">getAPIObjectType</a></li><li><a href="module-getBarcode.html">getBarcode</a></li><li><a href="module-getHeightInPixels.html">getHeightInPixels</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>components/template/ModalWrapper.jsx</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { IconButton, Modal } from "@mui/material"
+import { IoChevronBack, IoClose } from "react-icons/io5"
+
+/**
+ * Wrapper for modal content, to abstract away stylistic choices, buttons, and titles.
+ * 
+ * @param {object} props
+ * @param {boolean} props.open Whether the modal is open
+ * @param {function} props.onClose Function to close the modal
+ * @param {object} sx Custom styles for the modal (normally dimensions)
+ * @param {function} [handleBack] Function to handle a "back" action. Used for viewing assets/boxes/pallets.
+ * @param {JSX.Element} children  
+ * 
+ * @returns {JSX.Element}
+ * @component
+ * @category Components
+ * @subcategory Template
+ * @module ModalWrapper
+ * @example
+ * 
+ * return (
+ *     &lt;ModalWrapper open={modalOpen} onClose={onClose}>
+ *         &lt;h1>Modal Title&lt;/h1>
+ *         &lt;div>
+ *             { // modal contents }
+ *         &lt;/div>
+ *     &lt;/ModalWrapper>
+ * )
+ */
+const ModalWrapper = ({
+    open,
+    onClose,
+    sx,
+    handleBack,
+    children
+}) => {
+    if (!open) return null
+
+    return (
+        &lt;Modal open={open} onClose={onClose}>
+            &lt;div style={sx} className="modal">
+                &lt;IconButton onClick={onClose} className="close-button">
+                    &lt;IoClose />
+                &lt;/IconButton>
+                {
+                    handleBack &amp;&amp;
+                    &lt;IconButton onClick={handleBack} className="back-button">
+                        &lt;IoChevronBack />
+                    &lt;/IconButton>
+                }
+                {children}
+            &lt;/div>
+        &lt;/Modal>
+    )
+}
+
+export default ModalWrapper</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.4</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+
+</body>
+</html>

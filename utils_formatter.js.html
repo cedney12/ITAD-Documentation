@@ -1,0 +1,197 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> utils/formatter.js</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">ITAD Web App Documentation</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"></div><div class="category"><h2>Components</h2><h3>Modules / Auth</h3><ul><li><a href="module-Avatar.html">Avatar</a></li><li><a href="module-PermissionWrapper.html">PermissionWrapper</a></li><li><a href="module-ProtectedRoute.html">ProtectedRoute</a></li></ul><h3>Modules / Text</h3><ul><li><a href="module-BoxDetails.html">BoxDetails</a></li><li><a href="module-ItemDetails.html">ItemDetails</a></li><li><a href="module-PageTitle.html">PageTitle</a></li><li><a href="module-PalletDetails.html">PalletDetails</a></li><li><a href="module-PartnerDetails.html">PartnerDetails</a></li><li><a href="module-PlaceholderBox.html">PlaceholderBox</a></li></ul><h3>Modules / Reports</h3><ul><li><a href="module-BoxLabel.html">BoxLabel</a></li><li><a href="module-Invoice.html">Invoice</a></li><li><a href="module-PackingList.html">PackingList</a></li><li><a href="module-PalletLabel.html">PalletLabel</a></li><li><a href="module-PickTicket.html">PickTicket</a></li><li><a href="module-PlaceholderPDF.html">PlaceholderPDF</a></li><li><a href="module-ReportLabel.html">ReportLabel</a></li></ul><h3>Modules / Buttons</h3><ul><li><a href="module-Buttons.html">Buttons</a></li><li><a href="module-DropdownArrow.html">DropdownArrow</a></li><li><a href="module-IconButtons.html">IconButtons</a></li><li><a href="module-SegmentedControl.html">SegmentedControl</a></li></ul><h3>Modules / Form</h3><ul><li><a href="module-Card.html">Card</a></li><li><a href="module-ContactCard.html">ContactCard</a></li><li><a href="module-PartnerCard.html">PartnerCard</a></li><li><a href="module-PartnerModal.html">PartnerModal</a></li><li><a href="module-PhoneField.html">PhoneField</a></li><li><a href="module-StateField.html">StateField</a></li></ul><h3>Modules / Table</h3><ul><li><a href="module-CustomDataGrid.html">CustomDataGrid</a></li><li><a href="module-NullCell.html">NullCell</a></li></ul><h3>Modules / Data Grid</h3><ul><li><a href="module-Footer.html">Footer</a></li><li><a href="module-OptionalCell.html">OptionalCell</a></li></ul><h3>Modules / Template</h3><ul><li><a href="module-Header.html">Header</a></li><li><a href="module-Loading.html">Loading</a></li><li><a href="module-ModalWrapper.html">ModalWrapper</a></li></ul><h3>Modules / Orders</h3><ul><li><a href="module-OrderInfo.html">OrderInfo</a></li><li><a href="module-OrderInfoTitle.html">OrderInfoTitle</a></li></ul></div><div class="category"><h2>Contexts</h2><h3>Modules</h3><ul><li><a href="module-AuthContext.html">AuthContext</a></li><li><a href="module-LoadingContext.html">LoadingContext</a></li><li><a href="module-SnackbarContext.html">SnackbarContext</a></li></ul></div><div class="category"><h2>Hooks</h2><h3>Modules</h3><ul><li><a href="module-useBatchCalls.html">useBatchCalls</a></li><li><a href="module-useColumns.html">useColumns</a></li><li><a href="module-useFetchData.html">useFetchData</a></li><li><a href="module-useHandleRequest.html">useHandleRequest</a></li><li><a href="module-useItems.html">useItems</a></li><li><a href="module-useLocalStorage.html">useLocalStorage</a></li><li><a href="module-useLocations.html">useLocations</a></li><li><a href="module-useModalManager.html">useModalManager</a></li><li><a href="module-usePermissions.html">usePermissions</a></li><li><a href="module-useSelectRow.html">useSelectRow</a></li></ul></div><div class="category"><h2>Utility</h2><h3>Modules</h3><ul><li><a href="module-capitalize.html">capitalize</a></li><li><a href="module-depluralize.html">depluralize</a></li><li><a href="module-doNothing.html">doNothing</a></li><li><a href="module-formatDate.html">formatDate</a></li><li><a href="module-formatNumber.html">formatNumber</a></li><li><a href="module-formatPrice.html">formatPrice</a></li><li><a href="module-getAPIObjectType.html">getAPIObjectType</a></li><li><a href="module-getBarcode.html">getBarcode</a></li><li><a href="module-getHeightInPixels.html">getHeightInPixels</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>utils/formatter.js</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Formats date to locale string
+ * @param {string} dateString 
+ * @returns String version of date, in the form MM/DD/YY
+ * @category Utility
+ * @module Formatters
+ * @name formatDate
+ * @example
+ * // with formatDate imported...
+ * &lt;p>{formatDate("2024-12-23T16:24:00.211Z")}&lt;/p> // displays `12/23/24`
+ */
+export const formatDate = (dateString) => new Date(dateString).toLocaleDateString("en-US", { day: "2-digit", month: "2-digit", year: "2-digit" })
+
+/**
+ * Formats number to be presentable as data
+ * @param {string} numberString 
+ * @returns String version of number, with commas
+ * @category Utility
+ * @module Formatters
+ * @name formatNumber
+ * @example
+ * // with formatNumber imported...
+ * &lt;p>{formatNumber("25000")}&lt;/p> // displays `12,000`
+ */
+export const formatNumber = (numberString) => Number(numberString).toLocaleString()
+
+/**
+ * Formats a number to be USD
+ * @param {string} numberString 
+ * @returns String version of number as USD
+ * @category Utility
+ * @module Formatters
+ * @name formatPrice
+ * @example
+ * // with formatPrice imported...
+ * &lt;p>{formatPrice("25.7")}&lt;/p> // displays `$25.70`
+ */
+export const formatPrice = (numberString) => Number(numberString).toLocaleString("en-US", { style: "decimal", maximumFractionDigits: 2, minimumFractionDigits: 2 })
+
+/**
+ * De-pluralizes a string
+ * @param {string} s 
+ * @returns given string without final 's' or 'es'
+ * @category Utility
+ * @module Formatters
+ * @name depluralize
+ * @example
+ * // with depluralize imported...
+ * &lt;p>{depluralize("Boxes")}&lt;/p> // displays `Box`
+ * &lt;p>{depluralize("Pallets")}&lt;/p> // displays `Pallet`
+ */
+export const depluralize = (s) => s.slice(-2) === "es" ? s.slice(0, -2) : s.slice(0, -1)
+
+/**
+ * Capitalizes all words in the given string
+ * @param {string} s
+ * @returns given string with words capitalized 
+ * @category Utility
+ * @module Formatters
+ * @name capitalize
+ * @example
+ * // with capitalize imported...
+ * &lt;p>{capitalize("this is a string")}&lt;/p> // displays `This Is A String`
+ */
+export const capitalize = (s) => {
+    const words = s.split(" ")
+    let result = ""
+    for (const word of words) {
+        result += word.charAt(0).toUpperCase() + word.substring(1) + " "
+    }
+    return result.slice(0, -1)
+}
+
+export const parsePriceFieldValue = (s) => {
+    const number = s.match(/[\d\\.\\,]+/g)
+    return number.length > 0 ? formatPrice(number[0]) : 0
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.4</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+
+</body>
+</html>
