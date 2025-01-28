@@ -156,6 +156,39 @@ require outside dynamic data (i.e. data from the 'data' directory is
 okay), doesn't have any side effects (ex. sorting an array in-place), and
 will return the same output given the same input (counter example: random
 number generator).</li>
+</ul>
+<h2>ITAD Workflow:</h2>
+<p>Digital ITAD has a very specific way in which they work. Here is the current workflow as we understand it, which will most likely be updated as we refine this product:</p>
+<ul>
+<li>A Purchase Order is created with specific information
+<ul>
+<li>The user can choose whether the Purchase Order is an Interco order or not</li>
+<li>If it’s an Interco order, no contact information, as well as Purchase Order Items are entered</li>
+<li>If it’s not an Interco order, contact information is needed, and Purchase Order Items in the form of Description, Quantity, and Price Per Unit.</li>
+</ul>
+</li>
+<li>Once a Purchase Order is created, it can be edited up to the point of receiving. Once an Order has received an item, it can no longer be edited.</li>
+<li>A Purchase Order can be reviewed to see the original order and what was asked for, as well as what was received. This shows the discrepancies between the two and the real amount to be paid.</li>
+<li>Items are received from a shipment and scanned in by the Android Scanner. It takes care of creating Item records and marking the Purchase Order as received.</li>
+<li>Items received from a shipment are placed directly into a Box, into a Tray, or onto a Pallet.
+<ul>
+<li>Only Desktops are placed onto Pallets</li>
+<li>Only RAM sticks and CPUs are placed into Trays</li>
+<li>Everything else is placed into a Box, grouped by type/generation/version/like-characteristics</li>
+</ul>
+</li>
+<li>Tray Workflow:
+<ul>
+<li>A Tray consists of Tray Items, which are any number of like RAM sticks and CPUs.</li>
+<li>A Tray is created at the same time as the Tray Items, where they enter the specific information about the bundle of RAM sticks or number of CPUs</li>
+<li>RAM sticks generally will come in bundles of 25 or 50, making that the general size of a Tray with RAM</li>
+<li>CPUs will go one-by-one normally, though the functionality exists for them to be groups together in the database. Therefore, the user can choose to put the CPU in the next open CPU Tray, which will have a maximum capacity of 21.</li>
+</ul>
+</li>
+<li>Once Items are placed into Containers (Boxes/Pallets/Trays), they can be moved to any location (or shelf in the case of Trays) that they need to via the Android Scanner. They move wherever until they are shipped out.</li>
+<li>An Invoice is created by entering in Supplier, Customer, &amp; Contact information, as well as whatever Boxes and Pallets to be shipped in the Invoice. These Boxes and Pallets are only on-hand (not shipped) and need to be not already assigned to an Invoice.</li>
+<li>Once an Invoice is created, it can be viewed by the Items to be shipped out (Invoice) and the Containers to be picked (Order Picking).</li>
+<li>Once an Invoice is completed and shipped, it can be marked as completed, which marks all Containers and Items to be shipped.</li>
 </ul></article>
     </section>
 
