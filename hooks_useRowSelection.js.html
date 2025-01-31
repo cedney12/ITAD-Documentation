@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +7,7 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> useFetchData</title>
+  <title> hooks/useRowSelection.js</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -77,376 +79,66 @@
         <div class="core" id="main-content-wrapper">
             <div class="content">
                 <header class="page-title">
-                    <p>Module</p>
-                    <h1>useFetchData</h1>
+                    <p>Source</p>
+                    <h1>hooks/useRowSelection.js</h1>
                 </header>
                 
 
 
 
-
-<section>
-
-<header>
     
-        
-            
-        
-    
-</header>
-
-<article>
-    <div class="container-overview">
-    
-        
-            <div class="description"><p>Custom hook that fetches data from the given URL, with options to sort the
-data by a certain field (<code>sortField</code>) and to prioritize a value in that field
-or another field (<code>priorityValue</code> &amp; <code>priorityField</code>)</p></div>
-        
-
-        
-            
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-<div class="table-container">
-    <table class="params table">
-        <thead>
-        <tr>
-            
-            <th>Name</th>
-            
-
-            <th>Type</th>
-
-            
-            <th>Attributes</th>
-            
-
-            
-
-            <th class="last">Description</th>
-        </tr>
-        </thead>
-
-        <tbody>
-        
-
-            
-<tr class="deep-level-0">
-  
-      <td class="name"><code>fetchUrl</code></td>
-  
-
-  <td class="type">
-  
-      
-<code class="param-type">string</code>
-
-
-  
-  </td>
-
-  
-      <td class="attributes">
-      
-
-      
-
-      
-      </td>
-  
-
-  
-
-  <td class="description last"><p>URL for the API call</p></td>
-</tr>
-
-
-        
-
-            
-<tr class="deep-level-0">
-  
-      <td class="name"><code>options</code></td>
-  
-
-  <td class="type">
-  
-      
-<code class="param-type">object</code>
-
-
-  
-  </td>
-
-  
-      <td class="attributes">
-      
-
-      
-
-      
-      </td>
-  
-
-  
-
-  <td class="description last"><p>Options for the API call, default {}</p></td>
-</tr>
-
-  
-  
-    
-<tr class="deep-level-1">
-  
-      <td class="name"><code>sortField</code></td>
-  
-
-  <td class="type">
-  
-      
-<code class="param-type">string</code>
-
-
-  
-  </td>
-
-  
-      <td class="attributes">
-      
-          &lt;optional><br>
-      
-
-      
-
-      
-      </td>
-  
-
-  
-
-  <td class="description last"><p>Field by which to sort the resulting data</p></td>
-</tr>
-
-  
-    
-<tr class="deep-level-1">
-  
-      <td class="name"><code>sortDirection</code></td>
-  
-
-  <td class="type">
-  
-      
-<code class="param-type">"asc"</code>
-|
-
-<code class="param-type">"desc"</code>
-
-
-  
-  </td>
-
-  
-      <td class="attributes">
-      
-          &lt;optional><br>
-      
-
-      
-
-      
-      </td>
-  
-
-  
-
-  <td class="description last"><p>Direction by which to sort</p></td>
-</tr>
-
-  
-    
-<tr class="deep-level-1">
-  
-      <td class="name"><code>priorityField</code></td>
-  
-
-  <td class="type">
-  
-      
-<code class="param-type">string</code>
-
-
-  
-  </td>
-
-  
-      <td class="attributes">
-      
-          &lt;optional><br>
-      
-
-      
-
-      
-      </td>
-  
-
-  
-
-  <td class="description last"><p>Field by which to prioritize certain items</p></td>
-</tr>
-
-  
-    
-<tr class="deep-level-1">
-  
-      <td class="name"><code>priorityValue</code></td>
-  
-
-  <td class="type">
-  
-      
-<code class="param-type">string</code>
-
-
-  
-  </td>
-
-  
-      <td class="attributes">
-      
-          &lt;optional><br>
-      
-
-      
-
-      
-      </td>
-  
-
-  
-
-  <td class="description last"><p>Value to prioritize in the</p></td>
-</tr>
-
-  
-
-
-        
-        </tbody>
-    </table>
-</div>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-
-    
-
-    
-
-    
-        <p class="tag-source">
-            <a href="hooks_useFetchData.js.html" class="button">View Source</a>
-            <span>
-                <a href="hooks_useFetchData.js.html">hooks/useFetchData.js</a>, <a href="hooks_useFetchData.js.html#line5">line 5</a>
-            </span>
-        </p>
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Example</h5>
-    
-    
-        <pre class="prettyprint"><code>const { apiData, loading, error } = useFetchData("https://sampleapi.com/api", {    sortField: "weight"})</code></pre>
-    
-
-
-
-        
-    
-    </div>
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
-</section>
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/* eslint-disable react-hooks/exhaustive-deps */
+import { useEffect, useState } from 'react'
+import { isEmpty } from 'underscore'
+
+/**
+ * Custom hook that handles commonly used functions for selected rows with a DataGrid.
+ * 
+ * Specifically, this will handle selecting and unselecting rows, as well as updating
+ * a row if it gets changed in the overall data. 
+ * 
+ * @param {Array.&lt;*>} data 
+ * @param {object} options
+ * @param {string} options.field Unique field for each row 
+ * @param {boolean} options.debug 
+ * @module useRowSelection
+ * @category Hooks
+ */
+const useRowSelection = (data, options = {}) => {
+    let { field, debug } = options
+    if (!field) field = "id"
+    const [selectedRow, setSelectedRow] = useState({})
+
+    const handleSelectRow = (params) => {
+        if ("api" in params) {
+            const { api } = params
+            const selectedRows = api.getSelectedRows()
+            if (debug) console.log(selectedRows[0])
+            setSelectedRow(selectedRows.length > 0 ? selectedRows[0] : {})
+            return
+        }
+
+        setSelectedRow(params[field] === selectedRow[field] ? {} : params)
+    }
+
+    useEffect(() => {
+        if (!isEmpty(selectedRow)) {
+            setSelectedRow(data.find(item => item[field] === selectedRow[field]) ?? {})
+        }
+    }, [data])
+
+    return {
+        selectedRow,
+        setSelectedRow,
+        handleSelectRow
+    }
+}
+
+export default useRowSelection</code></pre>
+        </article>
+    </section>
 
 
 

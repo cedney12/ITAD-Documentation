@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +7,7 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> useFetchData</title>
+  <title> hooks/useGridData.js</title>
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -77,376 +79,95 @@
         <div class="core" id="main-content-wrapper">
             <div class="content">
                 <header class="page-title">
-                    <p>Module</p>
-                    <h1>useFetchData</h1>
+                    <p>Source</p>
+                    <h1>hooks/useGridData.js</h1>
                 </header>
                 
 
 
 
-
-<section>
-
-<header>
     
-        
-            
-        
-    
-</header>
-
-<article>
-    <div class="container-overview">
-    
-        
-            <div class="description"><p>Custom hook that fetches data from the given URL, with options to sort the
-data by a certain field (<code>sortField</code>) and to prioritize a value in that field
-or another field (<code>priorityValue</code> &amp; <code>priorityField</code>)</p></div>
-        
-
-        
-            
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-<div class="table-container">
-    <table class="params table">
-        <thead>
-        <tr>
-            
-            <th>Name</th>
-            
-
-            <th>Type</th>
-
-            
-            <th>Attributes</th>
-            
-
-            
-
-            <th class="last">Description</th>
-        </tr>
-        </thead>
-
-        <tbody>
-        
-
-            
-<tr class="deep-level-0">
-  
-      <td class="name"><code>fetchUrl</code></td>
-  
-
-  <td class="type">
-  
-      
-<code class="param-type">string</code>
-
-
-  
-  </td>
-
-  
-      <td class="attributes">
-      
-
-      
-
-      
-      </td>
-  
-
-  
-
-  <td class="description last"><p>URL for the API call</p></td>
-</tr>
-
-
-        
-
-            
-<tr class="deep-level-0">
-  
-      <td class="name"><code>options</code></td>
-  
-
-  <td class="type">
-  
-      
-<code class="param-type">object</code>
-
-
-  
-  </td>
-
-  
-      <td class="attributes">
-      
-
-      
-
-      
-      </td>
-  
-
-  
-
-  <td class="description last"><p>Options for the API call, default {}</p></td>
-</tr>
-
-  
-  
-    
-<tr class="deep-level-1">
-  
-      <td class="name"><code>sortField</code></td>
-  
-
-  <td class="type">
-  
-      
-<code class="param-type">string</code>
-
-
-  
-  </td>
-
-  
-      <td class="attributes">
-      
-          &lt;optional><br>
-      
-
-      
-
-      
-      </td>
-  
-
-  
-
-  <td class="description last"><p>Field by which to sort the resulting data</p></td>
-</tr>
-
-  
-    
-<tr class="deep-level-1">
-  
-      <td class="name"><code>sortDirection</code></td>
-  
-
-  <td class="type">
-  
-      
-<code class="param-type">"asc"</code>
-|
-
-<code class="param-type">"desc"</code>
-
-
-  
-  </td>
-
-  
-      <td class="attributes">
-      
-          &lt;optional><br>
-      
-
-      
-
-      
-      </td>
-  
-
-  
-
-  <td class="description last"><p>Direction by which to sort</p></td>
-</tr>
-
-  
-    
-<tr class="deep-level-1">
-  
-      <td class="name"><code>priorityField</code></td>
-  
-
-  <td class="type">
-  
-      
-<code class="param-type">string</code>
-
-
-  
-  </td>
-
-  
-      <td class="attributes">
-      
-          &lt;optional><br>
-      
-
-      
-
-      
-      </td>
-  
-
-  
-
-  <td class="description last"><p>Field by which to prioritize certain items</p></td>
-</tr>
-
-  
-    
-<tr class="deep-level-1">
-  
-      <td class="name"><code>priorityValue</code></td>
-  
-
-  <td class="type">
-  
-      
-<code class="param-type">string</code>
-
-
-  
-  </td>
-
-  
-      <td class="attributes">
-      
-          &lt;optional><br>
-      
-
-      
-
-      
-      </td>
-  
-
-  
-
-  <td class="description last"><p>Value to prioritize in the</p></td>
-</tr>
-
-  
-
-
-        
-        </tbody>
-    </table>
-</div>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    
-
-    
-
-    
-
-    
-        <p class="tag-source">
-            <a href="hooks_useFetchData.js.html" class="button">View Source</a>
-            <span>
-                <a href="hooks_useFetchData.js.html">hooks/useFetchData.js</a>, <a href="hooks_useFetchData.js.html#line5">line 5</a>
-            </span>
-        </p>
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Example</h5>
-    
-    
-        <pre class="prettyprint"><code>const { apiData, loading, error } = useFetchData("https://sampleapi.com/api", {    sortField: "weight"})</code></pre>
-    
-
-
-
-        
-    
-    </div>
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
-</section>
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/* eslint-disable react-hooks/exhaustive-deps */
+import { endpoints } from "data/api_data"
+import useDataGridControls from "./useDataGridControls"
+import useFetchData from "./useFetchData"
+import { useEffect } from "react"
+import useRowSelection from "./useRowSelection"
+
+/**
+ * Custom Hook to bundle the following hooks for use with AG-DataGrid
+ * - `useFetchData` (two instances one for the data, one for the number of records)
+ * - `useDataGridControls`
+ * - `useRowSelection`
+ * 
+ * This was done mostly to cut down on code rewriting. This way, when data for an AG-DataGrid with pagination, searching, etc is needed,
+ * only one hook is used instead of the multiple.
+ * 
+ * @param {string} endpointGroup The endpoint to grab data from API, will be a function that takes in control parameters 
+ * @param {object} options 
+ * @param {number} [options.page] Page number, default `0`
+ * @param {number} [options.pageSize] Page size, default `25`
+ * @param {boolean} [options.flag] Endpoint flag (like shipped, received, etc.), default `false`
+ * @param {string} [options.sortField] Field by which to sort, default `id`
+ * @param {string} [options.sortDirection] Direction in which to sort, default `desc`
+ * @param {string} [options.search] Search value, default `""`
+ * @param {boolean} [options.disabledRowSelection] `true` if row selection is disabled, `false` otherwise, default `false` 
+ * @param {boolean} [options.disableSearch] `true` if searching is disabed, `false` otherwise, default `false`
+ */
+const useGridData = (endpointGroup, options = {}) => {
+    const {
+        page = 0,
+        pageSize = 25,
+        flag = false,
+        sortField = "id",
+        sortDirection = "desc",
+        search = "",
+        disableRowSelection = false,
+        disableSearch = false
+    } = options
+    const pageEndpoint = endpoints[endpointGroup].getPage
+    const countEndpoint = endpoints[endpointGroup].getCount
+
+    const { apiData, reloadData, loading, error, url, setUrl } = useFetchData()
+    const { apiData: count, setUrl: setCountUrl, reloadData: reloadCount } = useFetchData()
+    const controls = useDataGridControls(pageEndpoint, setUrl, {
+        page,
+        pageSize,
+        flag,
+        sortField,
+        sortDirection,
+        search,
+        disableSearch
+    })
+    const { selectedRow, handleSelectRow } = useRowSelection(apiData)
+
+    const reloadAllData = () => {
+        reloadData()
+        reloadCount()
+    }
+
+    useEffect(() => {
+        setCountUrl(countEndpoint(controls.flag))
+    }, [controls.flag])
+
+    return {
+        apiData,
+        apiDataCount: count,
+        reloadData: reloadAllData,
+        loading,
+        error,
+        url,
+        setUrl,
+        gridControls: controls,
+        ...(!disableRowSelection &amp;&amp; { selectedRow, handleSelectRow })
+    }
+}
+
+export default useGridData</code></pre>
+        </article>
+    </section>
 
 
 
